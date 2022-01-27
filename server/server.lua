@@ -4,8 +4,8 @@ vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
 
 srr = {}
-Tunnel.bindInterface("srr_domination", srr)
-vCLIENT = Tunnel.getInterface("srr_domination")
+Tunnel.bindInterface(GetCurrentResourceName(), srr)
+vCLIENT = Tunnel.getInterface(GetCurrentResourceName())
 
 GlobalState.Dominas = false
 
