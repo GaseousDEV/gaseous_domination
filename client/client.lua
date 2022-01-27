@@ -3,8 +3,8 @@ local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 
 srr = {}
-Tunnel.bindInterface("srr_domination", srr)
-vSERVER = Tunnel.getInterface("srr_domination")
+Tunnel.bindInterface(GetCurrentResourceName(), srr)
+vSERVER = Tunnel.getInterface(GetCurrentResourceName())
 
 
 CreateThread(function()
