@@ -17,21 +17,26 @@ function CheckStats(source)
     else 
         GlobalState.Dominas = false
         vCLIENT.SetStatus(-1)
-        TriggerClientEvent("Notify", source,  "sucesso","Dominas Off") -- SE QUISER COLOCAR A MENSAGEM PARA TODOS SO TROCAR DE SOURCE PARA -1
+        TriggerClientEvent("Notify", source,  "negado","Dominas Off") -- SE QUISER COLOCAR A MENSAGEM PARA TODOS SO TROCAR DE SOURCE PARA -1
     end
 end
 
 function srr.CheckStock(fac,v)
     local source = source
+    local user_id = vRP.getUserId(source)
     local value = vRP.getSData('EstoqueFarm:'..fac)
     local balance = value or 0
     local camount = v.quantity
-    if tonumber(balance) >= camount then
-        vRP.setSData('EstoqueFarm:'..fac,(tonumber(balance)-camount))
-        return true 
-    else 
-        TriggerClientEvent("Notify", source, "negado","Sem Estoque")
-        return false  
+    
+    if not tonumber(balance) or tonumber(balance) == 0 then TriggerClientEvent("Notify", source, "negado","Sem Estoque") return end
+
+    if vRP.hasPermission(user_id, v.permission) then
+        if tonumber(balance) >= camount then
+            vRP.setSData('EstoqueFarm:'..fac,(tonumber(balance)-camount))
+            return true 
+        end
+    else
+        TriggerClientEvent("Notify", source, "negado","Você Não Tem Permissão")
     end
 end
 
@@ -64,8 +69,8 @@ RegisterCommand('dominas',function(source,args,rawCommand)
     local value = args[3]
     
     if not info then TriggerClientEvent("Notify", source, "negado","Coloque Um Argumento") return end
-    
-    if not vRP.hasPermission(user_id, Config.PermAdmin) return then end
+
+    if not vRP.hasPermission(user_id, Config.PermAdmin) then TriggerClientEvent("Notify", source, "negado","Você Não tem permissão") return end
         
         local message = "Tipos Disponiveis: "
 
@@ -73,7 +78,7 @@ RegisterCommand('dominas',function(source,args,rawCommand)
             message = message.. k..", "
         end
         
-        if info == "stats" then      
+        if info == "stats" then    
             CheckStats(source)
         end
 

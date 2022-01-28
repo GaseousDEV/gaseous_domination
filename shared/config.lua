@@ -1,16 +1,16 @@
 
 Config = {}
 
-Config.PermAdmin = "suapermissao.permissao" -- PERMISSAO ADM PARA TER ACESSO AOS COMANDOS
+Config.PermAdmin = "ceo.permissao" -- PERMISSAO ADM PARA TER ACESSO AOS COMANDOS
 
 Config.Domination = {
     ["Drogas"] = { 
-        ['x'] = 97.35, ['y'] = -2022.05, ['z'] = 18.31, -- COODENADA DO BLIP PARA PEGAR OS ITENS
+        ['x'] = 96.03, ['y'] = -2022.78, ['z'] = 18.25,  -- COODENADA DO BLIP PARA PEGAR OS ITENS
         ['quantity'] = 4,  -- QUANTIDADE DE ITENS POR BLIP
         ['item'] = {
             { name = "lancaperfume"} -- NOME DO ITEM
         },
-        ['permission'] = "suapermissao.permissao", -- PERMISSAO PARA PODER PARTICIPAR DO DOMINAS
+        ['permission'] = "ceo.permissao", -- PERMISSAO PARA PODER PARTICIPAR DO DOMINAS
     },
     ["Armas"] = { 
         ['x'] = 0.0, ['y'] = 0.0, ['z'] = 0.0, 
