@@ -1,4 +1,4 @@
-by Saarrada#7709
+by Saarrada#7709\n
 DISCORD DA GASEOUS: https://discord.gg/FxvuTkpPB8
 
 Script feito com o entuito de facilitar a Dominação de Farms
