@@ -1,8 +1,8 @@
-<div>by Saarrada#7709</div>
+by Saarrada#7709
 
-<div>Discord da Gaseous DEV https://discord.gg/FxvuTkpPB8</div>
+Discord da Gaseous DEV https://discord.gg/FxvuTkpPB8
 
-<div>Script feito com o entuito de facilitar a Dominação de Farms</div>
+Script feito com o entuito de facilitar a Dominação de Farms
 
 Comandos: 
 <p>/dominas stats -- ATIVA OU DESATIVA OS BLIPS DE DOMINAÇÃO</p>
