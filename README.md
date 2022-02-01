@@ -1,10 +1,53 @@
-by Saarrada#7709
+# gaseous_domination
+> Sistema de dominação de farm desenvolvido pela equipe Gaseous.
 
-Discord da Gaseous DEV https://discord.gg/FxvuTkpPB8
+> Conheça nossos trabalhos e inove seu servidor com a maior qualidade possível, acesse agora mesmo nosso [Servidor no Discord](https://discord.gg/ZD8gVAAJzt).
 
-Script feito com o entuito de facilitar a Dominação de Farms
+## Recursos do Sistema
+* Configuração intuitiva e fácil
+* Ativação do sistema através do comando `/dominas stats`
+* Adição de estoque através do comando `/dominas add`
+* Checagem do estoque através do comando `/dominas info`
 
-Comandos: 
-<p>/dominas stats -- ATIVA OU DESATIVA OS BLIPS DE DOMINAÇÃO</p>
-<p>/dominas add -- PARA ADICIONAR ESTOQUE</p>
-<p>/dominas info -- PARA VER O ESTOQUE</p>
+## Nossa Equipe
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/68912054?s=96&v=4" width="100px;" alt="Foto do Shawty"/><br>
+        <sub>
+          <b>Zhawty</b><br>  
+        </sub>
+      </a>
+Desenvolvedor Sr.
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/42743208?s=96&v=4" width="100px;" alt="Foto do Luska"/><br>
+        <sub>
+          <b>Luska</b><br> 
+        </sub>
+      </a>
+Desenvolvedor
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/88467879?s=96&v=4" width="100px;" alt="Foto do Sarrada"/><br>
+        <sub>
+          <b>Saarrada</b><br> 
+        </sub>
+      </a>
+Desenvolvedor
+    </td>
+<td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/69985363?s=96&v=4" width="100px;" alt="Foto do Giant"/><br>
+        <sub>
+          <b>Giantcard5</b><br> 
+        </sub>
+      </a>
+Desenvolvedor
+    </td>
+  </tr>
+</table>
